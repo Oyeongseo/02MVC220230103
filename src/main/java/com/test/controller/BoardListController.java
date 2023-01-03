@@ -7,7 +7,12 @@ public class BoardListController implements SubController {
 
 	@Override
 	public void execute(HttpServletRequest req, HttpServletResponse resp) {
-		// TODO Auto-generated method stub
+		
+		try {
+			req.getRequestDispatcher("/WEB-INF/view/board/list.jsp").forward(req, resp);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 	}
 
