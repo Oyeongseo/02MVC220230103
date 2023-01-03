@@ -50,7 +50,7 @@ public class MemberJoinController  implements SubController{
 
 	private boolean isValid(Map<String, String[]> params) {
 		// TODO Auto-generated method stub
-		msg="잘 좀 입력해봐유~";
+		msg="<i class='bi bi-exclamation-triangle'></i> <span>유효성 검사 오류</span>";
 		return false;
 	}
 
